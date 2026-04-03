@@ -1,35 +1,115 @@
-## 5-1 마이페이지 구현
+# 🎬 WoongMovie Project
 
-### 1.마이페이지 구현
+> 영화 정보를 탐색하고, 사용자 맞춤 기능(위시리스트, 인증 등)을 제공하는 영화 웹 서비스
 
-### 2. 사이드 메뉴 구현
+---
 
-### 5-2 무한스크롤 구현
+## 📌 프로젝트 소개
 
-### 서치를 했을 때 더보기 안보이게 , 무한스크롤 안되게
+WoongMovie는 다양한 영화 정보를 조회하고
+사용자가 직접 관심 영화(위시리스트)를 관리할 수 있는 웹 애플리케이션입니다.
 
-## 5-3 북마크 구현
+또한 Supabase 기반 인증을 통해 개인화된 경험을 제공합니다.
 
-### 1. 북마크 버튼 구현
+---
 
-### 2. 북마크 버튼 클릭시 로그인 유무 (로그인 시 북마크 체크 가능 / 로그인 아닐 시 로그인 토스트 알림)
+## 🚀 주요 기능
 
-### 3. 테이블 생성 (테이블 준비)
+### 🎥 영화 탐색
 
-### 4. 인서트 및 조회
+- 인기 영화 / 평점 높은 영화 조회
+- 영화 상세 정보 확인
+- 영화 검색 기능
 
-## 이제 북마크 했을 떄 어떤 사용자가 북마크를 했는지에 대해서 또 비교를 해야되기 떄문에 북마크 버튼을 눌렀을 때
+### ♾️ 무한 스크롤
 
-## 해당 유저의 id 값, 이미지, alt 부분 설명
+- Intersection Observer 기반 무한 스크롤 구현
+- 페이지네이션 UX 개선
 
-git commit table
-feat 새로운 기능 추가 feat(auth): add JWT authentication
-fix 버그 수정 fix(profile): correct image upload error
-docs 문서 추가/수정 docs(readme): update installation steps
-style 코드 의미에 영향 없는 변경 (포맷팅, 세미콜론 등) style: fix indentation
-refactor 코드 리팩토링 (기능 변경 없음) refactor(user-service): optimize logic
-test 테스트 코드 추가/수정 test(service): add unit tests
-chore 빌드/유지 관리 작업 chore: update dependencies
-perf 성능 개선 perf(query): optimize DB performance
-build 빌드 관련 변경 build: update Dockerfile
-ci CI 설정 파일 변경 ci: configure GitHub Actions
+### 🔐 사용자 인증
+
+- 이메일 회원가입 / 로그인
+- 소셜 로그인 (카카오, 구글)
+- Supabase Auth 기반 인증 처리
+
+### ❤️ 위시리스트
+
+- 관심 영화 저장 / 삭제
+- 로그인 사용자 기준 데이터 관리
+
+### 👤 마이페이지
+
+- 사용자 정보 확인
+- 위시리스트 목록 조회
+
+### 🌙 다크모드
+
+- 사용자 환경에 따른 테마 변경 지원
+
+---
+
+## 🛠️ 기술 스택
+
+### Frontend
+
+- React 19
+- TypeScript
+- Vite
+- React Router
+
+### State Management
+
+- Redux Toolkit
+
+### Data Fetching
+
+- Axios
+
+### Auth / Backend
+
+- Supabase
+
+### UI & Styling
+
+- Sass (SCSS)
+- Swiper (슬라이더 UI)
+- React Toastify (알림)
+
+---
+
+## 📂 프로젝트 구조
+
+```bash
+src
+├── apis            # API 요청 로직
+├── components      # 공통 UI 컴포넌트
+├── pages           # 페이지 단위 컴포넌트
+├── hooks           # 커스텀 훅
+├── store           # Redux Toolkit 상태관리
+├── constants       # 상수 정의
+├── lib             # 유틸 및 설정
+└── assets          # 이미지 및 스타일
+
+```
+
+## 실행 방법
+
+# 1. 의존성 설치
+
+npm install
+
+# 2. 개발 서버 실행
+
+npm run dev
+
+# 3. 빌드
+
+npm run build
+
+### 👉 1. 배포 링크 추가
+
+```md
+## 🌐 배포 링크
+
+https://woong-moive-project.vercel.app/
+```
