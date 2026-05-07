@@ -111,5 +111,5 @@ npm run build
 ```md
 ## 🌐 배포 링크
 
-https://woong-moive-project.vercel.app/
+https://woong-movie.vercel.app/
 ```
