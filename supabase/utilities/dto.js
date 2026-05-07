@@ -16,7 +16,7 @@ export const changeFromDto = ({ type, dto }) => {
 
       return {
         user: {
-          id: userInfo.sub,
+          id: dto.user.id || userInfo.sub,
           email: userInfo.email,
           userName: userInfo.userName
             ? userInfo.userName
